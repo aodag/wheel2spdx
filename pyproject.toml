@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wheel2spdx"
+description = "convert metadata to spdx document."
+readme = "README.md"
+authors = [{name = "Atsushi Odagiri", email = "aodagx@gmail.com"}]
+keywords = []
+license = {text = "MIT"}
+classifiers = []
+dependencies = [
+    "spdx-tools",
+    "distlib",
+]
+urls = {Home = "https://github.com/aodag/wheel2spdx"}
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "black",
+    "mypy",
+    "build",
+    "twine"
+]
+
+[project.scripts]
+wheel2spdx = "wheel2spdx:main"
