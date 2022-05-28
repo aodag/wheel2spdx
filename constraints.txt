@@ -38,7 +38,7 @@ rfc3986==2.0.0
 rich==12.4.4
 SecretStorage==3.3.2
 six==1.16.0
-spdx-tools==0.6.1
+spdx-tools==0.7.0a3
 tomli==2.0.1
 twine==4.0.0
 typing_extensions==4.2.0
